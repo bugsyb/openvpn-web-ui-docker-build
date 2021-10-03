@@ -1,4 +1,4 @@
-FROM arm64v8/debian
+FROM arm32v7/debian
 WORKDIR /opt
 EXPOSE 8080
 
@@ -16,7 +16,7 @@ RUN rm -f /opt/openvpn-gui/data.db
 ADD assets/app.conf /opt/openvpn-gui/conf/app.conf
 
 # temporary for tests
-ADD assets-override/dh2048.pem /etc/openvpn/
-ADD assets-override/dh4096.pem /etc/openvpn/
+#ADD assets-override/dh2048.pem /etc/openvpn/
+#ADD assets-override/dh4096.pem /etc/openvpn/
 
 CMD /opt/start.sh

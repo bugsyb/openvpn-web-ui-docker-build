@@ -8,7 +8,7 @@ OD=$PWD
 CURDIR=${OD}/$(dirname $0)
 cd "${CURDIR}"
 # Build golang & bee environment
-docker build --platform="arm64" -f Dockerfile-beego -t local/beego-v8 -t local/beego-v8:latest .
+docker build --platform="arm" -f Dockerfile-beego -t local/beego-v8 -t local/beego-v8:latest .
 
 # Package OpenVPN-UI tgz
   # Patching disabled since forked
@@ -26,7 +26,7 @@ docker build --platform="arm64" -f Dockerfile-beego -t local/beego-v8 -t local/b
 
 # Build OpenVPN-UI image
 
-PKGFILE="../openvpn-web-ui/openvpn-web-ui.tar.gz"
+PKGFILE="/home/pi/openvpn-web-ui/openvpn-web-ui.tar.gz"
   # Not needed since fork and additional patches applied directly
   #cp -rf openvpn-web-ui/build/assets ./
   #cp -rf assets-override/* ./assets/

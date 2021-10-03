@@ -1,5 +1,5 @@
 #Base image is in https://registry.hub.docker.com/_/golang/
-FROM arm64v8/golang:latest
+FROM arm32v7/golang:latest
 
 WORKDIR /tmp
 
