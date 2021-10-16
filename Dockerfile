@@ -12,7 +12,7 @@ ADD assets/generate_ca_and_server_certs.sh /opt/scripts/generate_ca_and_server_c
 ADD assets/vars.template /opt/scripts/
 ADD assets/genclient.sh /opt/scripts/genclient.sh
 ADD assets/rmclient.sh /opt/scripts/rmclient.sh
-ADD assets/openssl-easyrsa.cnf /opt/scripts/openssl-easyrsa.cnf
+#ADD assets/openssl-easyrsa.cnf /opt/scripts/openssl-easyrsa.cnf
 
 ADD openvpn-web-ui.tar.gz /opt/openvpn-gui/
 RUN rm -f /opt/openvpn-gui/data.db
