@@ -15,5 +15,5 @@ a) based on original Adam Walach work:
 b) completely separate (no code investigation done, just quick check)
 - ovpn-admin by @flant - https://github.com/flant/ovpn-admin
 
-At the same time these scripts do not work anymore as current **Go** syntax/requirements changed and scripts would need to be amended to stick to older/unsupported Go version.
-Given existance of above projects, scripts are not going to be maintained and are left just as reference as are used in at least one of above projects (OpenVPN-UI) where any remarks to source/credits have unfortunately been removed violating license.
+At the same time the scripts in this repo do not work anymore as current **Go** syntax/requirements changed and scripts would need to be amended to stick to older/unsupported Go version.
+Given existance of above projects, scripts are not going to be maintained and are left just as reference as are used in at least one of above projects (OpenVPN-UI) where any remarks to source/credits have unfortunately been removed violating license (@d3vilh added credit back after raising it with him).
